@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>David Reynaldo</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header id="home">
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#techStack">Stacks</a></li>
+				<li><a href="#battleshipGame">Battleship</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="jumbotron">
+			<h1>DAVID <br> REYNADLO</h1>
+			<p>Currently exploring front-end technologies and architectures through research and Dicoding academy.</p>
+		</div>
+		<div>
+	</header>
+	<main>
+		<div id="techStack" class="container">
+			<article class="flex-container-column-article section-card">
+				<div class="flex-container-row">
+					<h2 class="sub-title">TECHNOLOGY STACKS</h2>
+				</div>
+				<div class="flex-container-row">
+					<h3>Website Architecture</h3>
+				</div>
+				<div class="flex-container-row">
+					<p>Here what builds of what you see now:</p>
+				</div>
+
+				<section class="flex-container-row">
+					<div class="web-stack">
+						<h3>HTML5</h3>
+						<ul>
+							<li>Semantic meaning concept (header, footer, main, article, aside)</li>
+						</ul>
+					</div>
+					<div class="web-stack">
+						<h3>CSS3</h3>
+						<ul>
+							<li>Flexbox Layout</li>
+							<li>View Port</li>
+							<li>Media Query</li>
+						</ul>
+					</div>
+					<div class="web-stack">
+						<h3>JavaScript</h3>
+						<ul>
+							<li>EcmaScript Function</li>
+							<li>JSON</li>
+							<li>DOM & Manipulation</li>
+						</ul>
+					</div>
+					<div class="web-stack">
+						<h3>Web Storage</h3>
+						<ul>
+							<li>Local Storage</li>
+						</ul>
+					</div>
+				</section>
+			</article>
+
+			<aside class="flex-container-column-aside aside-card">
+				<figure class="flex-container-row flex-content-center">
+					<img src="assets/images/pas_photo_circle.png" alt="A brief about me" class="profile-img">
+				</figure>
+				<div class="flex-container-row flex-content-center">
+					<h2>PROFILE</h2>
+				</div>
+				<div class="flex-container-row">
+					<p>Just a curious guy which likes to explore new ideas and technologies. A combination of my academic background in Computer Science and Accounting helps me
+				to be an analyst on financial service system. Experienced in image processing which I've implemented on my personal projects and now, digging my knowledge in front-end 
+				technologies to discover a completely new challenge. <br><br>
+				<em>*please check my <a href="https://www.linkedin.com/in/david-reynaldo" target="_blank" style="color: white">LinkedIn</a> profile for detail</em></p>
+				</div>
+			</aside>
+		</div>
+
+	
+		<div id="battleshipGame" class="flex-container-column-bs padding-container-row">
+			<div class="flex-container-row flex-content-center">
+				<h2 class="sub-title">MINI BATTLESHIP GAME</h2>
+			</div>
+			<div class="flex-container-row border-container-row">
+				<ol>
+					<h3 class="">HOW TO PLAY:</h3>
+					<li>Each player sets 3 location of their ships in the board, and click "'Set Location". <br>
+					(Player who sets their ships first will take the first turn)</li>
+					<li>After all the ship has been set, click "Start Game" to play the game</li>
+					<li>Each player guess the opponent's ship location and if attack succeed, the attacker will get +1 score</li>
+					<li>Go on until a player destroy all the opponent ships</li>
+					<p>*be careful, you may destroy your own ship and cause -1 score</p>
+				</ol>
+			</div>
+		</div>
+
+		<div class="container flex-content-center">
+			<aside class="basis-column-player section-card">
+				<div class="flex-container-row flex-content-center">
+					<h1 id="p1turn"></h1>
+				</div>
+				<div class="flex-container-row flex-content-center margin-top-3">
+					<h1>Player 1</h1>
+				</div>
+				<div class="flex-container-row flex-content-center">
+					<h2>Score:</h2>
+				</div>
+				<div class="flex-container-row flex-content-center">
+					<h2 id="p1scoreboard" class="font-score">0</h2>
+				</div>
+				<div class="flex-container-row flex-content-center">
+					<button id="p1_button" class="button btn-setLoc">Set Location</button>
+				</div>
+			</aside>
+
+			<article id="battleship" class="flex-container-column-bs basis-60">
+				<div class="flex-container-row">
+					<div id="box1-1" class="box"></div>
+					<div id="box1-2" class="box"></div>
+					<div id="box1-3" class="box"></div>
+					<div id="box1-4" class="box"></div>
+					<div id="box1-5" class="box"></div>
+					<div id="box1-6" class="box"></div>
+					<div id="box1-7" class="box"></div>
+					<div id="box1-8" class="box"></div>
+				</div>
+				<div class="flex-container-row">
+					<div id="box2-1" class="box"></div>
+					<div id="box2-2" class="box"></div>
+					<div id="box2-3" class="box"></div>
+					<div id="box2-4" class="box"></div>
+					<div id="box2-5" class="box"></div>
+					<div id="box2-6" class="box"></div>
+					<div id="box2-7" class="box"></div>
+					<div id="box2-8" class="box"></div>
+				</div>
+				<div class="flex-container-row">
+					<div id="box3-1" class="box"></div>
+					<div id="box3-2" class="box"></div>
+					<div id="box3-3" class="box"></div>
+					<div id="box3-4" class="box"></div>
+					<div id="box3-5" class="box"></div>
+					<div id="box3-6" class="box"></div>
+					<div id="box3-7" class="box"></div>
+					<div id="box3-8" class="box"></div>
+				</div>
+				<div class="flex-container-row">
+					<div id="box4-1" class="box"></div>
+					<div id="box4-2" class="box"></div>
+					<div id="box4-3" class="box"></div>
+					<div id="box4-4" class="box"></div>
+					<div id="box4-5" class="box"></div>
+					<div id="box4-6" class="box"></div>
+					<div id="box4-7" class="box"></div>
+					<div id="box4-8" class="box"></div>
+				</div>
+				<div class="flex-container-row">
+					<div id="box5-1" class="box"></div>
+					<div id="box5-2" class="box"></div>
+					<div id="box5-3" class="box"></div>
+					<div id="box5-4" class="box"></div>
+					<div id="box5-5" class="box"></div>
+					<div id="box5-6" class="box"></div>
+					<div id="box5-7" class="box"></div>
+					<div id="box5-8" class="box"></div>
+				</div>
+				<div class="flex-container-row">
+					<div id="box6-1" class="box"></div>
+					<div id="box6-2" class="box"></div>
+					<div id="box6-3" class="box"></div>
+					<div id="box6-4" class="box"></div>
+					<div id="box6-5" class="box"></div>
+					<div id="box6-6" class="box"></div>
+					<div id="box6-7" class="box"></div>
+					<div id="box6-8" class="box"></div>
+				</div>
+				<div class="flex-container-row">
+					<div id="box7-1" class="box"></div>
+					<div id="box7-2" class="box"></div>
+					<div id="box7-3" class="box"></div>
+					<div id="box7-4" class="box"></div>
+					<div id="box7-5" class="box"></div>
+					<div id="box7-6" class="box"></div>
+					<div id="box7-7" class="box"></div>
+					<div id="box7-8" class="box"></div>
+				</div>
+				<div class="flex-container-row">
+					<div id="box8-1" class="box"></div>
+					<div id="box8-2" class="box"></div>
+					<div id="box8-3" class="box"></div>
+					<div id="box8-4" class="box"></div>
+					<div id="box8-5" class="box"></div>
+					<div id="box8-6" class="box"></div>
+					<div id="box8-7" class="box"></div>
+					<div id="box8-8" class="box"></div>
+				</div>
+			</article>
+
+			<aside class="flex-container-column-bs basis-column-player section-card">
+				<div class="flex-container-row flex-content-center">
+					<h1 id="p2turn"></h1>
+				</div>
+				<div class="flex-container-row flex-content-center margin-top-3">
+					<h1>Player 2</h1>
+				</div>
+				<div class="flex-container-row flex-content-center">
+					<h2>Score:</h2>
+				</div>
+				<div class="flex-container-row flex-content-center">
+					<h2 id="p2scoreboard" class="font-score">0</h2>
+				</div>
+				<div class="flex-container-row flex-content-center">
+					<button id="p2_button" class="button btn-setLoc">Set Location</button>
+				</div>
+			</aside>
+		</div>
+
+		<div class="flex-container-row flex-content-center">
+			<button id="start_button" class="button btn-start">START GAME</button>
+			<button id="reset_button" class="button btn-start">RESET GAME</button>
+		</div>
+
+		<div class="flex-container-column-bs flex-container-row margin-top-3">
+			<h2 class="flex-container-row flex-content-center">BATTLE HISTORY</h2>
+				<table class="table-history">
+					<thead>
+						<tr>
+							<th>Player 1</th>
+							<th>Score</th>
+							<th>Player 2</th>
+						</tr>
+					</thead>
+					<tbody id="historyList"></tbody>
+			</table>
+		</div>
+
+	</main>
+
+	<footer id="contact">
+		<h2>Stay Connected</h2>
+		<a href="mailto:davidreynaldo.ox@gmail.com?subject=Dicoding Feedback" target="_blank"><img src="assets/images/iconfinder_email.svg" alt="Email"></a>
+		<a href="https://www.instagram.com/davidd.ro/" target="_blank"><img src="assets/images/iconfinder_instagram.svg" alt="Instagram"></a>
+		<a href="https://www.linkedin.com/in/david-reynaldo" target="_blank"><img src="assets/images/iconfinder_linkedin.svg" alt="LinkedIn"></a>
+		<a href="https://github.com/dkit21"><img src="assets/images/iconfinder_github.svg" alt="Github"></a>
+		<a href="https://www.google.com/maps/place/North+Jakarta,+North+Jakarta+City,+Jakarta" target="_blank"><img src="assets/images/iconfinder_location.svg" alt="Location"></a>
+	</footer>
+
+	<script src="assets/storage.js" type="text/javascript"></script>
+	<script src="assets/battleship.js" type="text/javascript"></script>
+</body>
+</html>

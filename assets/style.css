@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+}
+
+.flex-container-column-nav,
+.flex-container-column-bs {
+	flex-direction: column;
+
+	margin: 0;
+}
+
+.flex-container-column-article {
+	flex-direction: column;
+	flex-basis: 65%;
+
+	margin: 30px 15px 30px 30px;
+}
+
+.flex-container-column-aside {
+	flex-basis: 35%;
+
+	margin: 30px 30px 30px 15px;
+	text-align: justify;
+}
+
+.flex-container-row {
+	display: flex;
+	margin: 0;
+	overflow: auto;
+}
+
+.flex-content-center {
+	justify-content: center;
+}
+
+.padding-container-row {
+	padding: 2em;
+	padding-bottom: 2em;
+}
+
+.border-container-row {
+	border: 5px solid #113565;
+	border-radius: 10px;
+
+	font-weight: 600;
+}
+
+.sub-title {
+	color: #113565;
+	font-size: 2em;
+}
+
+article h3 {
+	margin-top: 0;
+}
+
+article p {
+	margin-top: 40px;
+}
+
+.web-stack {
+	flex-basis: 25%;
+	flex-direction: row;
+
+	text-align: left;
+	margin: 20px 5px;
+	overflow: auto;
+}
+
+.section-card {
+	box-shadow: 0 6px 10px 0px rgba(5, 12, 38, 0.4);
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.aside-card {
+	box-shadow: 0 6px 10px 0px rgba(5, 12, 38, 0.4);
+	border-radius: 10px;
+	padding: 30px;
+	background-color: rgba(17, 53, 101, 1);
+	color: white;
+}
+
+.jumbotron {
+	width: 100%;
+	height: 400px;
+	background-image: url(images/adelin_preda.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* text property */
+    text-align: left;
+	font-size: 20px; 
+	padding: 80px 190px;
+}
+
+.profile-img {
+	width: 60%;
+	object-position: center;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    display: inline;
+    color: white;
+}
+
+nav {
+	padding: 5px;
+	background: -webkit-linear-gradient(left, #050c26, #113565);
+	position: sticky;
+	top: 0px;
+	font-weight: 500;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+}
+
+nav li a {
+	padding: 15px 25px;
+	text-decoration: none;
+	color: white;
+}
+
+nav li a:hover {
+	background-color: rgba(20, 48, 227, 0.2);
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.basis-column-player {
+	flex-basis: 20%;
+	flex-direction: row;
+
+	margin: 0 30px 0 30px;
+}
+
+.basis-60 {
+	flex-basis: 60%;
+}
+
+.box {
+	flex-basis: 12.5%;
+
+	padding: 2.5em;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.box:hover {
+	background-color: rgba(5, 12, 38, 0.1);
+}
+
+.no-hover {
+	pointer-events: none;
+}
+
+.margin-top-3 {
+	margin-top: 3.5em;
+}
+
+.btn-setLoc {
+	margin-top: 3em;
+
+	background-color: white;
+	color: black;
+	border: 2px solid #113565;
+}
+
+.btn-setLoc:hover {
+	background-color: #113565;
+	color: white;
+}
+
+.btn-start {
+	padding: 20px 60px;
+	margin-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-weight: bold;
+
+	background-color: white;
+	color: black;
+	border: 2px solid #116512;
+}
+
+.btn-start:hover {
+	background-color: #116512;
+	color: white;
+}
+
+#reset_button {
+	border: 2px solid #651111;
+}
+
+#reset_button:hover {
+	background-color: #651111;
+	color: white;
+}
+
+.button {
+	padding: 1em 2em;
+	border-radius: 4px;
+	text-align: center;
+	font-family: 'Montserrat' , sans-serif;
+	font-size: 18px;
+	transition-duration: 0.6s;
+  	cursor: pointer;
+}
+
+.button:disabled,
+.button[disabled] {
+	border: 2px solid #999999;
+	background-color: #cccccc;
+	color: #666666;
+	cursor: default;
+}
+
+.font-score {
+	font-size: 4em;
+}
+
+#p1turn,
+#p2turn {
+	font-style: italic;
+	font-weight: bold;
+
+	color: #116512;
+}
+
+footer {
+	background-color: #113565;
+	padding: 2em;
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+}
+
+footer img {
+	width: 35px;
+	margin: 5px;
+}
+
+.markLoc {
+	background-color: #113565;
+}
+
+.attackedLoc {
+	background-color: #4ab0f0;
+}
+
+.attackSucceedLoc {
+	background-color: #f04a4a;
+}
+
+.suicideLoc {
+	background-color: #f0e54a;
+}
+
+.table-history {
+	margin: 1em;
+	font-size: 1.5em;
+}
+
+th,
+td {
+	text-align: center;
+	padding: 16px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+th {
+	background-color: #113565;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #d2d2d2;
+}
+
+@media screen and (max-width: 1000px) {
+	.container,
+	aside {
+		width: 100%;
+		padding: 0px;
+	}
+
+	section-card {
+		padding: 10px;
+		margin: 10px;
+	}
+
+	.box {
+		padding: 1.5em;
+	}
+
+	.web-stack {
+		width: 50%;
+	}
+
+	.flex-container-column-article {
+		width: 50%;
+	}
+
+	.flex-container-column {
+		width: 100%;
+	}
+
+	#start_button,
+	#reset_button {
+		padding: 20px;
+	}
+
+	.basis-column-player {
+		width: 50%;
+	}
+}
